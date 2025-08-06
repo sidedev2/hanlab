@@ -21,7 +21,7 @@ const SidebarWithNav = () => {
           <Link
             key={nav}
             href={nav === 'home' ? '/' : `/${nav}`}
-            className='text-black text-[1.6rem] hover:underline'
+            className='text-main-white text-[1.6rem] hover:underline'
             onClick={closeSidebar}
           >
             {nav}

@@ -19,7 +19,7 @@ const Sidebar = ({ children }: PropsWithChildren) => {
       {/* 사이드바 패널 */}
       <div
         className={cn(
-          'fixed w-[30%] top-0 right-0 z-50 h-full  bg-white shadow-xl transition-transform duration-300 ease-in-out',
+          'fixed w-[30%] top-0 right-0 z-50 h-full  bg-blue-530 shadow-xl transition-transform duration-300 ease-in-out',
           isOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
@@ -28,7 +28,7 @@ const Sidebar = ({ children }: PropsWithChildren) => {
           <div className='flex justify-end mb-4'>
             <button
               onClick={closeSidebar}
-              className='p-2 text-gray-500 hover:text-gray-700'
+              className='p-2 text-main-white hover:text-gray-700'
             >
               ✕
             </button>
