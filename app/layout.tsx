@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ko' data-foxified=''>
+    <html lang='ko' suppressHydrationWarning>
       <body className={`antialiased`}>
         <SideBarProvider>
           <Header />
