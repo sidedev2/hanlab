@@ -1,3 +1,6 @@
+import { SidebarWithNav } from '@/components';
+import Header from '@/components/common/Header';
+import { SideBarProvider } from '@/contexts/SidebarContext';
 import type { Metadata } from 'next';
 import './globals.css';
 
@@ -16,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko' data-foxified=''>
-      <body className={` antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <SideBarProvider>
+          <Header />
+          {children}
+          <SidebarWithNav />
+        </SideBarProvider>
+      </body>
     </html>
   );
 }
