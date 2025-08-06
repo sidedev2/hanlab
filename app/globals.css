@@ -22,6 +22,14 @@
   --code-theme9: #535353;
   --code-theme10: #424242;
 
+  /* 화이트 */
+  --code-theme11: #f8f8ff;
+
+  /* 블랙 */
+  --code-theme12: #1c1c1c;
+
+  --color-main-white: var(--code-theme11);
+  --color-main-black: var(--code-theme12);
   --color-blue-2fe: var(--code-theme1);
   --color-blue-fdd: var(--code-theme2);
   --color-blue-530: var(--code-theme3);
