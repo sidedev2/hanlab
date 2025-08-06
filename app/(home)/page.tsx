@@ -1,9 +1,16 @@
-const Home = () => {
+import NextImage from 'next/image';
+
+const Page = () => {
   return (
-    <div className='font-extrabold h-dvh flex justify-center items-center'>
-      HOME
+    <div className=' flex justify-center items-center'>
+      <NextImage
+        src='/assets/hanlab_main.png'
+        alt='Hanlab Main Image'
+        fill
+        className='object-cover w-dvh h-dvh'
+      />
     </div>
   );
 };
 
-export default Home;
+export default Page;

@@ -1,7 +1,9 @@
+import { SubHeader } from '@/components';
+
 const Page = () => {
   return (
-    <div className='font-extrabold h-dvh flex justify-center items-center'>
-      RESEARCH
+    <div className='flex justify-start items-center'>
+      <SubHeader title='Research' />
     </div>
   );
 };
