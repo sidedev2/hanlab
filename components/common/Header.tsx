@@ -3,13 +3,26 @@
 import { useSidebar } from '@/contexts/SidebarContext';
 import NextImage from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
   const { openSidebar } = useSidebar();
+  const router = useRouter();
+  const navs = [
+    'home',
+    'research',
+    'publications',
+    'members',
+    'gallery',
+    'contact',
+  ];
   return (
     <>
       <header className='fixed flex items-center justify-between h-[6rem] top-0 left-0 w-full bg-[rgb(0,0,0,0.3)]  px-[2rem] z-50 lg:px-[4rem] lg:h-[7.6rem]'>
-        <div className='flex items-center gap-[2rem]'>
+        <div
+          className='flex items-center gap-[2rem] cursor-pointer'
+          onClick={() => router.push('/')}
+        >
           <NextImage
             src='/assets/logo-big.svg'
             alt='Hanlab Logo'
@@ -33,39 +46,16 @@ const Header = () => {
           </span>
         </div>
         <nav className='items-center gap-[2rem] hidden lg:flex'>
-          <Link href='/' className='text-white text-[1.6rem] hover:underline'>
-            home
-          </Link>
-          <Link
-            href='/research'
-            className='text-white text-[1.6rem] hover:underline'
-          >
-            research
-          </Link>
-          <Link
-            href='/publications'
-            className='text-white text-[1.6rem] hover:underline'
-          >
-            publications
-          </Link>
-          <Link
-            href='/members'
-            className='text-white text-[1.6rem] hover:underline'
-          >
-            members
-          </Link>
-          <Link
-            href='/gallery'
-            className='text-white text-[1.6rem] hover:underline'
-          >
-            gallery
-          </Link>
-          <Link
-            href='/contact'
-            className='text-white text-[1.6rem] hover:underline'
-          >
-            contact
-          </Link>
+          {navs.map((nav) => (
+            <Link
+              key={nav}
+              href={nav === 'home' ? '/' : `/${nav}`}
+              className='text-white text-[1.6rem] hover:underline'
+            >
+              {nav}
+            </Link>
+          ))}
+
           <NextImage
             src='/assets/search.svg'
             alt='Search Icon'
