@@ -51,7 +51,7 @@ const ImageCarousel = ({ children }: PropsWithChildren) => {
             src={image}
             alt={`Hanlab Main Image ${index + 1}`}
             fill
-            className={`-z-10 object-cover transition-opacity duration-700 ease-out ${
+            className={`object-cover transition-opacity duration-700 ease-out ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
             }`}
           />
