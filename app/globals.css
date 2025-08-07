@@ -1,26 +1,72 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
+}
+@theme {
+  /* 블루 */
+  --code-theme1: #47f2fe;
+  --code-theme2: #08cfdd;
+  --code-theme3: #0b2530;
+  --code-theme4: #9bb2b4;
+
+  /* 그레이 */
+  --code-theme5: #d9d9d9;
+  --code-theme6: #bcbcbc;
+  --code-theme7: #bfbfbf;
+  --code-theme8: #888888;
+  --code-theme9: #535353;
+  --code-theme10: #424242;
+
+  /* 화이트 */
+  --code-theme11: #f8f8ff;
+
+  /* 블랙 */
+  --code-theme12: #1c1c1c;
+
+  --color-main-white: var(--code-theme11);
+  --color-main-black: var(--code-theme12);
+  --color-blue-2fe: var(--code-theme1);
+  --color-blue-fdd: var(--code-theme2);
+  --color-blue-530: var(--code-theme3);
+  --color-blue-2b4: var(--code-theme4);
+
+  --color-gray-9d9: var(--code-theme5);
+  --color-gray-cbc: var(--code-theme6);
+  --color-gray-fbf: var(--code-theme7);
+  --color-gray-888: var(--code-theme8);
+  --color-gray-353: var(--code-theme9);
+  --color-gray-242: var(--code-theme10);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  @apply box-border;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+root,
+html,
 body {
+  @apply min-h-dvh w-full;
+  font-family: Pretendard, Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  line-height: 1.5;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: webkit-fill-available;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -webkit-overflow-scrolling: touch;
+}
+
+button {
+  @apply cursor-pointer;
 }
