@@ -2,7 +2,7 @@ import { SubHeader } from '@/components';
 
 const Page = () => {
   return (
-    <div className='flex justify-start items-center'>
+    <div className='flex items-center justify-start'>
       <SubHeader title='Research' />
     </div>
   );

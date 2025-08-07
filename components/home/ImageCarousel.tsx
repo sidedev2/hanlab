@@ -40,7 +40,7 @@ const ImageCarousel = ({ children }: PropsWithChildren) => {
   };
 
   return (
-    <div className='relative flex justify-center items-center w-dvw h-dvh'>
+    <div className='relative flex h-dvh w-dvw items-center justify-center'>
       {/* children이 있다면 children을 렌더링 */}
       {children}
       {/* lg 이상: opacity 방식 */}
@@ -60,7 +60,7 @@ const ImageCarousel = ({ children }: PropsWithChildren) => {
 
       {/* lg 미만: 터치 슬라이드 방식 */}
       <div
-        className='lg:hidden w-full h-full overflow-hidden'
+        className='h-full w-full overflow-hidden lg:hidden'
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -70,7 +70,7 @@ const ImageCarousel = ({ children }: PropsWithChildren) => {
           style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
         >
           {images.map((image, index) => (
-            <div key={index} className='relative min-w-full h-full'>
+            <div key={index} className='relative h-full min-w-full'>
               <NextImage
                 src={image}
                 alt={`Hanlab Main Image ${index + 1}`}
@@ -88,7 +88,7 @@ const ImageCarousel = ({ children }: PropsWithChildren) => {
       <NextImage
         src='/assets/prev.svg'
         alt='Previous Image'
-        className='absolute hidden lg:block w-[4rem] h-[4rem] left-4 top-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform duration-200'
+        className='absolute top-1/2 left-4 hidden h-[4rem] w-[4rem] -translate-y-1/2 cursor-pointer transition-transform duration-200 hover:scale-110 lg:block'
         width={40}
         height={40}
         onClick={() =>
@@ -102,22 +102,22 @@ const ImageCarousel = ({ children }: PropsWithChildren) => {
         alt='Next Image'
         width={40}
         height={40}
-        className='absolute hidden lg:block w-[4rem] h-[4rem] right-4 top-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform duration-200'
+        className='absolute top-1/2 right-4 hidden h-[4rem] w-[4rem] -translate-y-1/2 cursor-pointer transition-transform duration-200 hover:scale-110 lg:block'
         onClick={() =>
           setCurrentImageIndex((currentImageIndex + 1) % images.length)
         }
       />
 
       {/* 인디케이터 점 */}
-      <div className='flex gap-[1rem] absolute bottom-[2rem] left-1/2 -translate-x-1/2'>
+      <div className='absolute bottom-[2rem] left-1/2 flex -translate-x-1/2 gap-[1rem]'>
         {Array.from({ length: images.length }).map((_, index) => (
           <button
             key={index}
             className={cn(
-              ' w-3 h-3  rounded-full cursor-pointer',
+              'h-3 w-3 cursor-pointer rounded-full',
               index === currentImageIndex
-                ? 'bg-main-white '
-                : 'bg-transparent border-[0.1rem] border-main-white'
+                ? 'bg-main-white'
+                : 'border-main-white border-[0.1rem] bg-transparent'
             )}
             onClick={() => setCurrentImageIndex(index)}
           />

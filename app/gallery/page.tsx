@@ -2,7 +2,7 @@ import { SubHeader } from '@/components';
 
 const Page = () => {
   return (
-    <div className='flex flex-col justify-start items-center'>
+    <div className='flex flex-col items-center justify-start'>
       <SubHeader title='Gallery' />
     </div>
   );
