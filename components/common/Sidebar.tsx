@@ -19,7 +19,7 @@ const Sidebar = ({ children }: PropsWithChildren) => {
       {/* 사이드바 패널 */}
       <div
         className={cn(
-          'bg-blue-530 fixed top-0 right-0 z-50 h-full w-[30%] shadow-xl transition-transform duration-300 ease-in-out',
+          'bg-blue-530 fixed top-0 right-0 z-50 h-full w-[40%] shadow-xl transition-transform duration-300 ease-in-out',
           isOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >

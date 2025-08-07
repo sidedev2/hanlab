@@ -16,7 +16,7 @@ const SidebarWithNav = () => {
   ];
   return (
     <Sidebar>
-      <nav className='flex flex-col gap-4 p-4'>
+      <nav className='flex flex-col gap-4 p-4 md:p-10'>
         {navs.map((nav) => (
           <Link
             key={nav}
