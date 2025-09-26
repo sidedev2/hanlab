@@ -39,7 +39,7 @@ const Page = () => {
           <p className='text-gray-888 mb-4 text-[2rem] font-bold'>
             주요 연구분야
           </p>
-          <p className='text-blue-fdd mb-8 text-[3.5rem] font-bold'>
+          <p className='text-blue-fdd mb-8 text-[2.5rem] font-bold lg:text-[3.5rem]'>
             Research About
           </p>
           <p className='max-w-4xl text-[1.6rem] leading-relaxed'>

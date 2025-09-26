@@ -18,7 +18,7 @@ const ResearchDetailCard = ({
   return (
     <div className='mb-16 flex w-full flex-col items-center lg:items-start'>
       {/* 제목 */}
-      <h2 className='text-center text-[3rem] font-normal lg:text-left lg:text-[3.5rem]'>
+      <h2 className='text-center text-[2rem] font-normal lg:text-left lg:text-[3.5rem] lg:text-[3rem]'>
         {title}
       </h2>
       <div className='border-b-blue-2fe lg:border-l-blue-2fe border-b-[1.5px] p-3 text-[1rem] lg:border-b-0 lg:border-l-[3px] lg:pl-6 lg:text-[1.8rem]'>
