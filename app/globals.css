@@ -50,11 +50,16 @@ root,
 html,
 body {
   @apply min-h-dvh w-full;
-  font-family: Pretendard, Arial, Helvetica, sans-serif;
+  font-family: var(--font-hana);
   margin: 0 auto;
   padding: 0;
+  position: relative;
+  width: 100vw;
   overflow-x: hidden;
   font-size: 62.5%;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
   line-height: 1.5;
   background: var(--background);
   color: var(--foreground);
@@ -66,6 +71,7 @@ body {
   }
   -webkit-overflow-scrolling: touch;
 }
+
 
 button {
   @apply cursor-pointer;
