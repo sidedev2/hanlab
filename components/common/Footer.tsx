@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='bg-blue-530 fixed bottom-0 left-0 right-0 w-full mt-10'>
+    <footer className='bg-blue-530 bottom-0 left-0 right-0 w-full mt-10'>
       {/* lg 이상 */}
       <div className='hidden lg:flex p-11 flex-row'>
         <div className='flex flex-col gap-7'>
@@ -122,7 +122,7 @@ const Footer = () => {
             height={30}
             className='w-[3rem] h-[3rem] object-contain self-start'
           />
-          <div className='flex flex-col gap-2 w-full'>
+          <div className='flex flex-col gap-2 w-full mb-2'>
             <Link
               href='/contact'
               className='w-full py-4 border-[0.05rem] border-gray-CBC text-530 bg-gray-9d9 font-bold text-[1.6rem] rounded-[1rem] text-center'
