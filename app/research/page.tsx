@@ -35,7 +35,7 @@ const Page = () => {
         <SubHeader title='Research' />
       </div>
       <div className='flex flex-col items-center px-15 py-20 text-center'>
-        <div>
+        <div className='my-10 lg:my-30'>
           <p className='text-gray-888 mb-4 text-[2rem] font-bold'>
             주요 연구분야
           </p>
@@ -51,7 +51,7 @@ const Page = () => {
             바이오마커 및 치료 타겟을 발굴하는 연구를 수행하고 있습니다.
           </p>
         </div>
-        <div className='my-10 h-[2px] w-full bg-gray-200' />
+        <div className='mb-20 h-[2px] w-full bg-gray-200' />
         <div className='flex w-full flex-col text-left'>
           {researchData.map((research, index) => (
             <ResearchDetailCard
