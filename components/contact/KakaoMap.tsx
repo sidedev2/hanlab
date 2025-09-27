@@ -1,7 +1,10 @@
+ 
 'use client';
 
 import Script from 'next/script';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 declare global {
   interface Window {
