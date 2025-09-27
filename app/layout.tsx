@@ -1,5 +1,4 @@
-import { SidebarWithNav } from '@/components';
-import Header from '@/components/common/Header';
+import { Footer, SidebarWithNav, Header } from '@/components';
 import { SideBarProvider } from '@/contexts/SidebarContext';
 import type { Metadata } from 'next';
 import './globals.css';
@@ -23,6 +22,7 @@ export default function RootLayout({
         <SideBarProvider>
           <Header />
           {children}
+          <Footer />
           <SidebarWithNav />
         </SideBarProvider>
       </body>
