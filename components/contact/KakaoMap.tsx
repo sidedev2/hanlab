@@ -69,7 +69,7 @@ const KakaoMap = ({ children }: KakaoMapProps) => {
 
       <div
         ref={mapRef}
-        className='rounded-base relative h-[calc(100dvh-480px)] w-full overflow-hidden rounded-2xl bg-gray-100'
+        className='rounded-base relative h-[25rem] w-full overflow-hidden rounded-2xl bg-gray-100 lg:h-[calc(100dvh-480px)]'
       >
         {children}
       </div>
