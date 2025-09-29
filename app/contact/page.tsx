@@ -1,6 +1,4 @@
-import { SubHeader } from '@/components';
-import InfoCard from '@/components/contact/InfoCard';
-import KakaoMap from '@/components/contact/KakaoMap';
+import { SubHeader, KakaoMap, InfoCard } from '@/components';
 
 const Page = () => {
   return (

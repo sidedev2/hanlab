@@ -1,24 +1,6 @@
-import { ImageCarousel, ResearchCard } from '@/components';
-import ResearchButton from '@/components/home/ResearchButton';
+import { ImageCarousel, ResearchCard, ResearchButton } from '@/components';
+import { researchData } from '@/constants/researchData';
 import { cn } from '@/util/cn';
-
-const researchData = [
-  {
-    title: '골반통 치료법차별화플랫폼 기업수치',
-    description:
-      '골반통 및 약물전달시스템 기술개발에 특화된 독자적인 약물 전달 기술력을 바탕으로 골반통치료용 서방형 주사제를 개발하여 골반통환자들의 삶의 질 향상에 기여하고자 한다.',
-  },
-  {
-    title: '골반통 치료법차별화플랫폼 기업수치',
-    description:
-      '골반통 및 약물전달시스템 기술개발에 특화된 독자적인 약물 전달 기술력을 바탕으로 골반통치료용 서방형 주사제를 개발하여 골반통환자들의 삶의 질 향상에 기여하고자 한다.',
-  },
-  {
-    title: '골반통 치료법차별화플랫폼 기업수치',
-    description:
-      '골반통 및 약물전달시스템 기술개발에 특화된 독자적인 약물 전달 기술력을 바탕으로 골반통치료용 서방형 주사제를 개발하여 골반통환자들의 삶의 질 향상에 기여하고자 한다.',
-  },
-];
 
 const Page = () => {
   return (

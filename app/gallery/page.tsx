@@ -1,5 +1,4 @@
-import { SubHeader } from '@/components';
-import GalleryCard from '@/components/gallery/GalleryCard';
+import { SubHeader, GalleryCard } from '@/components';
 import { galleryData } from '@/constants/galleryData';
 
 const Page = () => {
