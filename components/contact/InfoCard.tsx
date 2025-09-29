@@ -2,7 +2,7 @@ import { MapPin, Mail, Phone, Building2, GraduationCap } from 'lucide-react';
 
 const InfoCard = () => {
   return (
-    <div className='w-full rounded-xl border border-gray-200 bg-white p-6 shadow-lg lg:rounded-2xl lg:p-15'>
+    <div className='w-full rounded-xl border border-gray-300 bg-white p-6 shadow-lg lg:rounded-2xl lg:p-15'>
       {/* 헤더 섹션 */}
       <div className='mb-6 lg:mb-8'>
         <div className='mb-3 flex flex-col gap-3 lg:mb-4 lg:flex-row lg:items-center lg:gap-4'>
