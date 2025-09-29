@@ -4,3 +4,4 @@ export * from './contact';
 export * from './gallery';
 export * from './research';
 export * from './publications';
+export * from './members';
