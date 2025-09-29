@@ -19,10 +19,10 @@ const GalleryCard = ({ src, title, date }: GalleryCardProps) => {
       </div>
 
       <div className='p-4 lg:p-6'>
-        <h3 className='mb-2 line-clamp-2 text-lg font-semibold text-gray-800 lg:text-xl'>
+        <h3 className='mb-2 line-clamp-2 text-[1.8rem] font-semibold text-gray-800 lg:text-[2rem]'>
           {title}
         </h3>
-        <p className='text-sm text-gray-500 lg:text-base'>{date}</p>
+        <p className='text-[1.6rem] text-gray-500 lg:text-[1.8rem]'>{date}</p>
       </div>
     </div>
   );
