@@ -24,37 +24,64 @@ const KakaoMap = ({ children }: KakaoMapProps) => {
     const container = mapRef.current;
     if (!container) return;
 
+    // 에비슨 의생명연구센터 좌표
+    const coords = new window.kakao.maps.LatLng(37.563982, 126.942502);
+
     // 지도 옵션 설정
     const mapOption = {
-      center: new window.kakao.maps.LatLng(33.450701, 126.570667),
+      center: coords,
       level: 2,
     };
 
     const map = new window.kakao.maps.Map(container, mapOption);
-    const geocoder = new window.kakao.maps.services.Geocoder();
 
-    // 주소로 좌표 검색
-    geocoder.addressSearch(
-      '서울시 서대문구 연세로 50-1, 연세대학교 의과대학 연세의생명연구원, 에비슨 의생명연구센터 508호',
-      (result: any, status: any) => {
-        if (status === window.kakao.maps.services.Status.OK) {
-          const coords = new window.kakao.maps.LatLng(result[0].y, result[0].x);
+    // 마커 생성
+    const marker = new window.kakao.maps.Marker({
+      map: map,
+      position: coords,
+    });
 
-          // 마커 생성
-          const marker = new window.kakao.maps.Marker({
-            map: map,
-            position: coords,
-          });
+    const content = `
+      <div style="
+        position: relative;
+        left: 3px;
+        bottom: 50px;
+        background: white;
+        padding: 12px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        font-family: 'Pretendard', sans-serif;
+      ">
+        <div style="
+          font-size: 15px;
+          font-weight: 700;
+          color: #0B2530;
+          margin-bottom: 4px;
+        ">HANLAB</div>
+        <div style="
+          font-size: 12px;
+          color: #666;
+        ">연세대학교 에비슨의생명연구센터</div>
+        <div style="
+          position: absolute;
+          bottom: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid white;
+        "></div>
+      </div>
+    `;
 
-          const infowindow = new window.kakao.maps.InfoWindow({
-            content:
-              '<div style="width:150px;text-align:center;padding:6px 0;">HANLAB</div>',
-          });
-          infowindow.open(map, marker);
-          map.setCenter(coords);
-        }
-      }
-    );
+    new window.kakao.maps.CustomOverlay({
+      map: map,
+      position: coords,
+      content: content,
+      yAnchor: 1,
+    });
   };
 
   return (
