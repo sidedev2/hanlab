@@ -35,10 +35,16 @@ const KakaoMap = ({ children }: KakaoMapProps) => {
 
     const map = new window.kakao.maps.Map(container, mapOption);
 
+    // 마커 생성
+    new window.kakao.maps.Marker({
+      map: map,
+      position: coords,
+    });
+
     const content = `
       <div style="
         position: relative;
-        left: 3px;
+        left: 5px;
         bottom: 50px;
         background: white;
         padding: 12px 20px;
