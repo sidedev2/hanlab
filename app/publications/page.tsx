@@ -5,42 +5,75 @@ import {
 } from '@/components';
 
 const Page = () => {
-  const publications2024 = [
+  const publications2026 = [
     {
       id: 1,
-      title: 'Exploring NNMT: from metabolic pathways to therapeutic targets',
-      authors: 'Park J, Shin EJ, Kim TH, Yang JH, Ki SH, Kang KW, Kim KM',
+      title: 'CD45⁺ hybrid circulating cells may reflect tumor-immune interactions and serve as transcriptomic indicators of metastatic potential in prostate cancer',
+      authors: '',
       journal:
-        'Archives of Pharmacal Research (2024) 47(12):893-913 (IF: 6.9, JCR 4.2%) (Review)',
-      year: 2024,
-      link: '#',
+        'Theranostics',
+      year: 2026,
     },
+  ];
+
+  const publications2025 = [
     {
       id: 2,
-      title: 'Exploring NNMT: from metabolic pathways to therapeutic targets',
-      authors:
-        'Park J, Shin EJ, Kim TH, Yang JH, Ki SH, Kang KW, Kim KM , Park J, Shin EJ, Kim TH, Yang JH, Ki SH, Kang KW, Kim KM',
-      journal:
-        'Archives of Pharmacal Research (2024) 47(12):893-913 (IF: 6.9, JCR 4.2%) (Review)',
-      year: 2024,
+      title: 'Decisional Trade-offs in Localized Prostate Cancer: A Prospective Cross-Sectional Study of Radical Prostatectomy, Radiation Therapy, and Active Surveillance',
+      authors: '',
+      journal: 'Journal of Urologic oncology',
+      year: 2025,
     },
     {
       id: 3,
-      title: 'Exploring NNMT: from metabolic pathways to therapeutic targets',
-      authors: 'Park J, Shin EJ, Kim TH, Yang JH, Ki SH, Kang KW, Kim KM',
-      journal:
-        'Archives of Pharmacal Research (2024) 47(12):893-913 (IF: 6.9, JCR 4.2%) (Review)',
-      year: 2024,
+      title: 'Usefulness of free PSA ratio to enhance detection of clinically significant prostate cancer in patients with PI-RADS<3 and PSA≤10',
+      authors: '',
+      journal: 'Prostate International',
+      year: 2025,
+    },
+    {
+      id: 4,
+      title: 'Genome assembly resources of genitourinary cancers for chromosomal aberration at the single nucleotide level',
+      authors: '',
+      journal: 'Scientific Data',
+      year: 2025,
+    },
+    {
+      id: 5,
+      title: 'Skin rash in metastatic hormone sensitive prostate cancer patients treated with apalutamide: a retrospective multicenter study in Korea',
+      authors: '',
+      journal: 'Prostate International',
+      year: 2025,
     },
   ];
 
   const publications2023 = [
     {
-      id: 4,
-      title: 'Another research paper title from 2023',
-      authors: 'Lee J, Kim S, Park H',
-      journal: 'Journal of Medicine (2023) 45(6):234-245',
+      id: 6,
+      title: 'Phosphodiesterase-5 Inhibitor Use in Robot Assisted Radical Prostatectomy Patients Is Associated with Reduced Risk of Death: A Propensity Score Matched Analysis of 1,058 Patients',
+      authors: '',
+      journal:
+        'World Journal of Men’s Health',
       year: 2023,
+    },
+    {
+      id: 7,
+      title: 'Circulating Tumor DNA Analysis on Metastatic Prostate Cancer with Disease Progression',
+      authors: '',
+      journal:
+        'Cancers',
+      year: 2023,
+    },
+  ];
+
+  const publications2022 = [
+    {
+      id: 8,
+      title: 'Mesenchymal and stem-like prostate cancer linked to therapy-induced lineage plasticity and metastasis',
+      authors: '',
+      journal:
+        'Cell Reports',
+      year: 2022,
     },
   ];
 
@@ -55,7 +88,7 @@ const Page = () => {
         <div>
           <div className='border-gray-242 mb-6 border-b-1 pb-2 lg:mb-10'>
             <h2 className='text-gray-242 text-2xl font-bold lg:text-[3rem]'>
-              한랩 | 진행 중인 R&D 사업
+              진행 중인 R&D 사업
             </h2>
           </div>
           <PublicationCard />
@@ -72,12 +105,20 @@ const Page = () => {
           {/* 연도별 Publication */}
           <div className='space-y-12 lg:space-y-16'>
             <CurrentPublicationCard
-              year={2024}
-              publications={publications2024}
+              year={2026}
+              publications={publications2026}
+            />
+            <CurrentPublicationCard
+              year={2025}
+              publications={publications2025}
             />
             <CurrentPublicationCard
               year={2023}
               publications={publications2023}
+            />
+            <CurrentPublicationCard
+              year={2022}
+              publications={publications2022}
             />
           </div>
         </div>

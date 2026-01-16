@@ -45,7 +45,7 @@ const Page = () => {
               <MemberCard
                 name='한현호 교수 (Hyunho Han, M.D., Ph.D.)'
                 role='연세대학교 의과대학 비뇨의학교실 조교수'
-                email='Tintal@yuhs.ac'
+                email='TINTAL@yuhs.ac'
                 photo='/assets/professor.png'
                 type='professor'
                 lines={[]}

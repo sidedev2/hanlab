@@ -45,13 +45,6 @@ const InfoCard = () => {
                 <br />
                 에비슨 의생명연구센터 508호
               </p>
-              <p>#508, Avison Biomedical Research Center,</p>
-              <p>
-                Yonsei University College of Medicine, Yonsei Biomedical Research
-                Institute,
-              </p>
-              <p>50-1 Yonsei-ro, Seodaemun-gu, Seoul, Republic of Korea</p>
-
             </div>
           </div>
 

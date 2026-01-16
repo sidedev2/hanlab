@@ -5,7 +5,7 @@ const Page = async () => {
   const items = await getGalleryItems();
 
   return (
-    <div>
+    <div className='min-h-screen'>
       <div className='flex flex-col items-center justify-start'>
         <SubHeader title='Gallery' />
       </div>

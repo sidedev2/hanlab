@@ -19,7 +19,7 @@ const PublicationCard = ({ year, publications }: PublicationCardProps) => {
     <div className='mt-6 lg:mt-10'>
       {/* 연도 헤더 */}
       <div className='mb-6 lg:mb-8'>
-        <h2 className='text-3xl font-bold text-cyan-400 lg:text-4xl'>{year}</h2>
+        <h2 className='text-3xl font-bold text-blue-fdd lg:text-4xl'>{year}</h2>
       </div>
 
       {/* Publication 리스트 */}

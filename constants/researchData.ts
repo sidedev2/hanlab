@@ -2,7 +2,7 @@ export const researchData = [
   {
     title: '전립선암 분자 아형 분류 및 예후 예측',
     subtitle: 'Molecular Subtyping & Prognosis Prediction',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image1.png',
     imageAlt: 'Molecular Subtyping Research',
     description:
       '전립선암은 환자마다 약물 반응과 예후가 매우 다양한 질환입니다. 본 연구팀은 전립선암 조직의 RNA sequencing 분석을 통해 암을 Luminal Type(호르몬 치료 반응 양호)과 Aggressive Variant(치료 저항성) 등으로 정밀하게 분류하는 기술을 개발하였습니다.',
@@ -16,7 +16,7 @@ export const researchData = [
   {
     title: '전립선암 면역 회피 기전 및 Single-cell Multi-omics',
     subtitle: 'Immuno-Oncology',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image6.png',
     imageAlt: 'Immuno-Oncology Research',
     description:
       '전립선암은 면역관문억제제(Immune Checkpoint Inhibitor)의 효과가 제한적인 대표적인 암종입니다. 본 연구실은 전립선암 미세환경 내에서 면역세포가 암세포를 공격하지 못하게 만드는 회피 기전을 연구합니다.',
@@ -30,7 +30,7 @@ export const researchData = [
   {
     title: '암 유전체 심층 분석',
     subtitle: 'Long-read Sequencing & Structural Variation',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image2.png',
     imageAlt: 'Genome Analysis Research',
     description:
       "기존의 짧은 서열 분석(Short-read sequencing)으로는 해독이 불가능했던 암 유전체의 '암흑 물질(Dark Matter)'을 탐구합니다.",
@@ -44,7 +44,7 @@ export const researchData = [
   {
     title: '환자 유래 오가노이드 기반 정밀 의료',
     subtitle: 'Patient-Derived Organoids',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image5.png',
     imageAlt: 'Organoid Research',
     description:
       "실제 환자의 암 조직을 이용하여 실험실에서 3차원으로 배양한 '환자 유래 오가노이드(PDO)' 모델을 구축하고 있습니다.",
@@ -57,7 +57,7 @@ export const researchData = [
   {
     title: '탄탈륨 나노입자 방사선 방광염 예방 치료제 개발',
     subtitle: 'Nanoparticles for Radiation Cystitis',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image3.png',
     imageAlt: 'Nanoparticle Research',
     description:
       '방사선 치료의 주요 부작용인 출혈성 방광염과 방광 섬유화를 예방하고 치료하는 신소재를 개발합니다.',
@@ -70,7 +70,7 @@ export const researchData = [
   {
     title: '전립선암 표적 전달 항암제 개량 연구',
     subtitle: 'Targeted Drug Delivery & Improvement',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image4.png',
     imageAlt: 'Drug Delivery Research',
     description:
       '기존 항암제의 전신 부작용을 줄이고 암세포에만 선택적으로 작용하도록 약물을 개량합니다.',
@@ -83,7 +83,7 @@ export const researchData = [
   {
     title: '마그네틱 비드를 이용한 신속 암 진단',
     subtitle: 'Rapid Diagnosis using Magnetic Beads',
-    imageSrc: '/assets/hanlab_main.png',
+    imageSrc: '/assets/image7.png',
     imageAlt: 'Magnetic Beads Diagnosis Research',
     description:
       '자성을 띠는 나노 입자를 활용하여 암을 빠르고 정확하게 진단하는 기술을 개발합니다.',
