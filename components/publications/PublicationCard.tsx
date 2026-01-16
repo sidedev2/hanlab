@@ -30,7 +30,7 @@ const PublicationCard = ({ year, publications }: PublicationCardProps) => {
             className='group border-l-4 border-gray-200 pl-4 transition-all hover:border-cyan-400 lg:pl-6'
           >
             {/* 제목 */}
-            <h3 className='mb-2 text-lg font-semibold text-gray-800 transition-colors group-hover:text-cyan-600 lg:text-xl'>
+            <h3 className='mb-2 text-lg font-semibold text-gray-800 transition-colors group-hover:text-cyan-600 lg:text-3xl'>
               {pub.link ? (
                 <a
                   href={pub.link}
@@ -47,12 +47,12 @@ const PublicationCard = ({ year, publications }: PublicationCardProps) => {
             </h3>
 
             {/* 저자 */}
-            <p className='mb-2 text-sm text-gray-600 lg:text-base'>
+            <p className='mb-2 text-sm text-gray-600  lg:text-2xl'>
               {pub.authors}
             </p>
 
             {/* 저널 정보 */}
-            <p className='text-sm text-gray-500 lg:text-base'>
+            <p className='text-sm text-gray-500 lg:text-2xl'>
               - {pub.journal}
             </p>
           </div>
