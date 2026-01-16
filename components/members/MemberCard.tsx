@@ -1,7 +1,9 @@
+import { cn } from '@/util/cn';
 import Image from 'next/image';
 
 type MemberCardProps = {
   name: string;
+  type: 'professor' | 'researcher';
   role: string;
   email?: string;
   photo?: string;
@@ -10,14 +12,22 @@ type MemberCardProps = {
 
 const MemberCard = ({
   name,
+  type,
   role,
   email,
   photo = '/assets/hanlab_main2.png',
   lines = [],
+
 }: MemberCardProps) => {
+  const isProfessor = type === 'professor';
+  const gridCols = isProfessor ? 'lg:grid-cols-[22rem_1fr]' : 'lg:grid-cols-[18rem_1fr]';
+  const imageSize = isProfessor
+    ? 'h-[20rem] w-[12rem] lg:h-[30rem] lg:w-[22rem]'
+    : 'h-[16rem] w-[12rem] lg:h-[24rem] lg:w-[18rem]';
+
   return (
-    <div className='grid w-full grid-cols-[12rem_1fr] gap-8 py-10 lg:grid-cols-[18rem_1fr]'>
-      <div className='relative h-[16rem] w-[12rem] overflow-hidden rounded-md lg:h-[24rem] lg:w-[18rem]'>
+    <div className={cn('grid w-full grid-cols-[12rem_1fr] gap-8 py-10', gridCols)}>
+      <div className={cn('relative overflow-hidden rounded-lg bg-gray-200', imageSize)}>
         <Image
           src={photo}
           alt={`${name} photo`}
@@ -27,7 +37,7 @@ const MemberCard = ({
       </div>
 
       <div className='flex flex-col gap-3'>
-        <div className='flex items-end gap-3'>
+        <div className='flex flex-col items-start gap-1'>
           <h3 className='text-[2rem] font-semibold lg:text-[2.4rem]'>{name}</h3>
           <span className='text-[1.4rem] text-gray-500 lg:text-[1.6rem]'>
             {role}
