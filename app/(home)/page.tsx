@@ -21,7 +21,7 @@ const Page = () => {
           >
             <span className='text-main-white'>Welcome to</span>
             <span className='text-blue-2fe'>Han Lab</span>
-            <span className='text-main-white text-[1.8rem] font-light lg:text-[2.8rem]'>
+            <span className='text-main-white text-[1.8rem] font-light lg:text-[3.6rem]'>
               연세 비뇨기암 정밀의학 연구실
             </span>
             <ResearchButton className='mt-[5rem]' />
