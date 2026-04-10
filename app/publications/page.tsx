@@ -3,6 +3,13 @@ import {
   PublicationCard,
   CurrentPublicationCard,
 } from '@/components';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Publications',
+  description:
+    '한현호 교수 연구실 논문 목록. 전립선암 정밀의학, 비뇨기암 관련 연구 출판물.',
+};
 
 const Page = () => {
   const publications2026 = [

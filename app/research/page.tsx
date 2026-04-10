@@ -1,5 +1,12 @@
 import { SubHeader, ResearchDetailCard } from '@/components';
 import { researchData } from '@/constants/researchData';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Research',
+  description:
+    '한현호 교수 연구실 연구 분야: 전립선암 분자 아형 분류, 면역항암 연구, 나노의학 기반 정밀의학 중개연구.',
+};
 
 const Page = () => {
   return (

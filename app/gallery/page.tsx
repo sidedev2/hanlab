@@ -1,5 +1,11 @@
 import { getGalleryItems } from '@/api/gallary';
 import { SubHeader, GalleryCard } from '@/components';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gallery',
+  description: '한현호 교수 연구실 갤러리. 연구실 활동 및 행사 사진.',
+};
 
 const Page = async () => {
   const items = await getGalleryItems();
