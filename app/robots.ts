@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://hanlab.vercel.app/sitemap.xml',
+    sitemap: 'https://hanlab.yonsei.ac.kr/sitemap.xml',
   };
 }

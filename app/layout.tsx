@@ -24,13 +24,13 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
   },
-  metadataBase: new URL('https://hanlab.vercel.app'),
+  metadataBase: new URL('https://hanlab.yonsei.ac.kr'),
   openGraph: {
     title:
       '한현호 교수 연구실 | 연세대학교 비뇨의학교실 비뇨기암 정밀의학 연구실',
     description:
       '연세대학교 의과대학 비뇨의학교실 한현호 교수 연구실. 전립선암 정밀의학, 분자 아형 분류, 면역항암, 나노의학 중개연구.',
-    url: 'https://hanlab.vercel.app',
+    url: 'https://hanlab.yonsei.ac.kr',
     siteName: 'Han Lab - 연세 비뇨기암 정밀의학 연구실',
     locale: 'ko_KR',
     type: 'website',
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://hanlab.vercel.app',
+    canonical: 'https://hanlab.yonsei.ac.kr',
   },
   verification: {
-    google: 'wbv-GAuDiPQQjAXOtrU7sR9nBLolutQJVI6tC2BrUc4',
+    google: 'FVDkWe1Je8fc6fdxMozlyH1QZaoWmkRYxqwZp8Mf9Wk',
   },
 };
 
