@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     canonical: 'https://hanlab.yonsei.ac.kr',
   },
   verification: {
-    google: 'FVDkWe1Je8fc6fdxMozlyH1QZaoWmkRYxqwZp8Mf9Wk',
+    google: 'zMrWKnN2J82HYxgPywY7VLicn9CZ7J6PinNtfnDMgsc',
   },
 };
 
